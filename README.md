@@ -26,7 +26,7 @@ See the paper [here] (https://assets.researchsquare.com/files/rs-3191730/v1_cove
 |--------------|---------------------------------------------------------------------------|
 | `codes/`     | Provides the source code.                                                 |
 | `data/`      | Contains the dataset - training (with augmentation), validation, test.    |
-| `models/`    | Svaes training models according to the model architecture.                |
+| `models/`    | Saves training models according to the model architecture.                |
 
 
 ## Installation
