@@ -63,7 +63,7 @@ It will print the prediction with the confidence and generate the Grad-CAM which
 To generate a TSNE plot with a trained model, put the model directory link to the *model* variable in *tsne.py* file and then run *tsne.py* file. 
 
 ~~~~{.python}
-python test_image.py
+python tsne.py
 ~~~~
 
 It will generate the TSNE plot which will be saved to the current folder with the name *tsne.png*
