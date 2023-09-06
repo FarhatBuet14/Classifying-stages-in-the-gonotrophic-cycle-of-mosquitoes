@@ -38,7 +38,12 @@ pip install -r requirements.txt
 
 ## How To Run
 
+#### * Dataset
+
+Download the dataset from [here](https://drive.google.com/drive/folders/1PkaNq0hh7OimMKJmGqwa0y2gQbkGRbOO?usp=sharing) and place the *data* folder in the current directory. It has a *data.npz* file containing all the images - training (with augmentation), validation and the test dataset. The size of this file is 1.88GB. 
+
 #### * Training
+
 For Training run the *train.py* and provide a model name i.e. *EfficientNetB0*. 
 ~~~~{.python}
 python train.py --name EfficientNetB0
@@ -48,10 +53,13 @@ Other parameters can be passed as arguments.
 python train.py --name EfficientNetB0 --ep 500 --batch 16 
 ~~~~
 
+#### * Pretrained models
+
+Get all the pretrained models from [here](https://drive.google.com/drive/folders/16HtdoMFrDejoFo8WATZ5xa3gGaRWAxMb?usp=sharing). Place the *models* folder in the current directory. It has subfolders with the four AI architectures names (ConvNeXtTiny, EfficientNetB0, MobileNetV2, ResNet50) which have been used to train the dataset. Each subfolder contains a *.h5* file, storing the model architecture with the weights and parameters. Loading these pretrained models, all the test results and Grad-CAMs can be re-genrated. 
 
 #### * Test an Image and Generate Grad-CAM
 
-To test a trained model with an image, place the test image in the current folder, rename the image to *test_image.jpg*, put the model directory link to the *model* variable in *test_image.py* file and then run *test_image.py* file. 
+To test a trained model with an image, place the test image in the current folder, rename the image to *test_image.jpg*, put the model directory link (we have provided our pretrained models which can be loaded here) to the *model* variable in *test_image.py* file and then run *test_image.py* file. 
 ~~~~{.python}
 python test_image.py
 ~~~~
