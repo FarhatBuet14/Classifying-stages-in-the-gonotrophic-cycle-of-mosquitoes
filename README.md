@@ -57,11 +57,17 @@ python train.py --name EfficientNetB0 --ep 500 --batch 16
 
 Get all the pretrained models from [here](https://drive.google.com/drive/folders/16HtdoMFrDejoFo8WATZ5xa3gGaRWAxMb?usp=sharing). Place the *models* folder in the current directory. It has subfolders with the four AI architectures names (ConvNeXtTiny, EfficientNetB0, MobileNetV2, ResNet50) which have been used to train the dataset. Each subfolder contains a *.h5* file, storing the model architecture with the weights and parameters. Loading these pretrained models, all the test results and Grad-CAMs can be re-genrated. 
 
+Run the *test_model.py* and provide a model name i.e. *EfficientNetB0*, model directory. 
+~~~~{.python}
+python test_model.py --name EfficientNetB0 --model ../models/EfficientNetB0/model00000533.h5
+~~~~
+
+
 #### * Test an Image and Generate Grad-CAM
 
-To test a trained model with an image, place the test image in the current folder, rename the image to *test_image.jpg*, put the model directory link (we have provided our pretrained models which can be loaded here) to the *model* variable in *test_image.py* file and then run *test_image.py* file. 
+To test a trained model with an image, run *test_image.py* file with and provide a model name i.e. *EfficientNetB0*, model directory and the directory of the test image
 ~~~~{.python}
-python test_image.py
+python test_image.py --name EfficientNetB0 --model ../models/EfficientNetB0/model00000533.h5 --test test_image.jpg
 ~~~~
 
 It will print the prediction with the confidence and generate the Grad-CAM which will be saved to the current folder with the name *gradCam_test_image.jpg*
@@ -71,7 +77,7 @@ It will print the prediction with the confidence and generate the Grad-CAM which
 To generate a TSNE plot with a trained model, put the model directory link to the *model* variable in *tsne.py* file and then run *tsne.py* file. 
 
 ~~~~{.python}
-python tsne.py
+python tsne.py --name EfficientNetB0 --model ../models/EfficientNetB0/model00000533.h5
 ~~~~
 
 It will generate the TSNE plot which will be saved to the current folder with the name *tsne.png*
