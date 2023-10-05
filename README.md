@@ -80,4 +80,6 @@ To test a trained model with an image, run *test_image.py* file with and provide
 python test_image.py --name EfficientNetB0 --model ../models/EfficientNetB0/model00000533.h5 --test test_image.jpg
 ~~~~
 
-It will print the prediction with the confidence and generate the Grad-CAM which will be saved to the current folder with the name *gradCam_test_image.jpg*
+It will print the prediction with the confidence and generate the Grad-CAM which will be saved to the current folder with the name *gradCam_test_image.jpg*.
+
+We are also hosting this classification test process in the [web server] (https://mosquito-classifier.firebaseapp.com/) where you can upload an image and check the results with the Grad-CAM within less than a minute. 
