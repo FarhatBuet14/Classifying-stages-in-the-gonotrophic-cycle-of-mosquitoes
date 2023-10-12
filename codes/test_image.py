@@ -28,7 +28,7 @@ if(arguments.test): param.image_name = arguments.test
 
 adult = {0: 'unfed', 1: 'gravid', 2: "semi-gravid", 3: "fully fed"}
 
-if param.name == "ConvNeXtTiny":
+if param.model_name == "ConvNeXtTiny":
     import keras.applications.convnext as cvx
     model = tf.keras.models.load_model(param.model_directory, compile = False, custom_objects={'LayerScale':cvx.LayerScale})
 else:

@@ -33,7 +33,7 @@ assert y_test.shape == (234, 1)
 
 x_test = x_test / 255.0
 
-if param.name == "ConvNeXtTiny":
+if param.model_name == "ConvNeXtTiny":
     import keras.applications.convnext as cvx
     model = tf.keras.models.load_model(param.model_directory, compile = False, custom_objects={'LayerScale':cvx.LayerScale})
 else:
