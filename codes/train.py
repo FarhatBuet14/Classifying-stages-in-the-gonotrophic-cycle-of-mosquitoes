@@ -34,7 +34,7 @@ class paramClass():
 param = paramClass()
 
 parser = argparse.ArgumentParser(description='Necessary variables')
-parser.add_argument("--name",type=int, help = "Name of the model architecture")
+parser.add_argument("--name",type=str, help = "Name of the model architecture")
 parser.add_argument("--ep",type=int, help = "Number of epochs")
 parser.add_argument("--batch",type=int, help = "Batch Size")
 parser.add_argument("--lr",type=str, help = "Learning Rate")

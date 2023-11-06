@@ -12,8 +12,8 @@ class paramClass():
 param = paramClass()
 
 parser = argparse.ArgumentParser(description='Necessary variables')
-parser.add_argument("--name",type=int, help = "Name of the model architecture")
-parser.add_argument("--model",type=int, help = "Directory to the pretrained model file")
+parser.add_argument("--name",type=str, help = "Name of the model architecture")
+parser.add_argument("--model",type=str, help = "Directory to the pretrained model file")
 arguments = parser.parse_args()
 
 if(arguments.name): param.model_name = arguments.name
