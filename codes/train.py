@@ -110,7 +110,7 @@ print(model.summary())
 optimizer = tf.keras.optimizers.Adam(learning_rate = param.lr)
 loss=keras.losses.SparseCategoricalCrossentropy()
 model.compile(loss=loss,optimizer=optimizer,metrics=['accuracy', keras.metrics.SparseCategoricalAccuracy()])
-checkpoint = keras.callbacks.ModelCheckpoint(log_folder + '../models/param.model_name/model{epoch:08d}.h5', save_freq=1)
+checkpoint = keras.callbacks.ModelCheckpoint('../models/param.model_name/model{epoch:08d}.h5', save_freq=1)
 
 from keras.preprocessing.image import ImageDataGenerator
 train_datagen = ImageDataGenerator(rescale=1.0/255.0)
@@ -125,6 +125,6 @@ history = model.fit(train_generator, steps_per_epoch=len(train_generator),
     epochs=param.epoch, shuffle=True, verbose=1)
 
 hist_df = pd.DataFrame(history.history) 
-hist_df.to_csv(log_folder + '../models/param.model_name/Final_history.csv')
+hist_df.to_csv('../models/param.model_name/Final_history.csv')
 
 print("Finished")
