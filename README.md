@@ -3,7 +3,7 @@ We have designed computer vision techniques to determine stages in the gonotroph
 
 See the paper [here](https://assets.researchsquare.com/files/rs-3191730/v1_covered_6cfac5b8-31ac-4e10-897c-b692ac1255ff.pdf?c=1690863911) 
 
-This paper has been accepted to ***<font color="blue">Scientific Reports</font>*** this 11th November, 2023. The published version will be available soon. 
+This paper has been accepted to ***_<font color="blue">Scientific Reports</font>_*** this 11th November, 2023. The published version will be available soon. 
 
 ## Abdominal Conditions of a Female Mosquito According to the Stages of its Gonotrophic Cycle
 
