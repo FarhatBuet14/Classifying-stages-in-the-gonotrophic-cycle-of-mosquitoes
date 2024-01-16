@@ -1,9 +1,7 @@
 ## Classifying Stages in the Gonotrophic Cycle of Mosquitoes
 We have designed computer vision techniques to determine stages in the gonotrophic cycle (unfed, fully fed, semi-gravid and gravid)) of female mosquitoes (*Aedes aegypti, Anopheles stephensi, and Culex quinquefasciatus*) from images captured by smartphones.
 
-See the paper [here](https://doi.org/10.1038/s41598-023-47266-7) 
-
-This paper has been accepted to ***_<font color="blue">Scientific Reports</font>_*** this 11th November, 2023. The published version will be available soon. 
+The [paper](https://doi.org/10.1038/s41598-023-47266-7) has been accepted to ***_<font color="blue">Scientific Reports</font>_*** this 13th December, 2023. The published version will be available soon. 
 
 ## Abdominal Conditions of a Female Mosquito According to the Stages of its Gonotrophic Cycle
 
